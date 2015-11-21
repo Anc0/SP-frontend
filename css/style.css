@@ -11,7 +11,7 @@ Website: http://geekslabs.com/
 body {
     color: #797979;
     background: #eeeeee;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     padding: 0px !important;
     margin: 0px !important;
     font-size: 14px !important;
@@ -295,6 +295,11 @@ table tr th {
 .modal-header .close {
     font-weight: 300;
     font-size: 30px;
+}
+
+/*report page*/
+.report-subtitle {
+    padding-left: 16px;
 }
 
 /*grades page*/
