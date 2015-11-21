@@ -1828,8 +1828,7 @@ textarea.input-lg {
   outline-offset: -2px;*/
   outline: none;
 }
-.btn:hover,
-.btn:focus {
+.btn:hover {
   color: #2b2b2b;
   text-decoration: none;
 }
@@ -1852,8 +1851,6 @@ fieldset[disabled] .btn {
   border-color: #c7c7cc;
 }
 .btn-default:hover,
-.btn-default:focus,
-.btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
   color: #ffffff;
@@ -1889,12 +1886,10 @@ fieldset[disabled] .btn-default.active {
   border-color: magenta;
 }
 .btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  color: magenta;
-  border-color: magenta;
+  color: #ff0066;
+  border-color: #ff0066;
   background: transparent;  
 }
 .btn-primary:active,
