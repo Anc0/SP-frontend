@@ -12,7 +12,6 @@
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
 	font-family: 'ElegantIcons';
-	content: attr(data-icon);
 	speak: none;
 	font-weight: normal;
 	font-variant: normal;

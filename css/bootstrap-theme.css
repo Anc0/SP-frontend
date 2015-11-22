@@ -225,11 +225,11 @@ table {
     }
 
     a[href]:after {
-        content: " (" attr(href) ")";
+        content: " (' attr(href) ')";
     }
 
     abbr[title]:after {
-        content: " (" attr(title) ")";
+        content: " (' attr(title) ')";
     }
 
     .ir a:after,
@@ -255,10 +255,6 @@ table {
 
     img {
         max-width: 100% !important;
-    }
-
-    @page {
-        margin: 2cm .5cm;
     }
 
     p,
@@ -1848,7 +1844,7 @@ input[type="search"] {
 input[type="radio"],
 input[type="checkbox"] {
     margin: 4px 0 0;
-    margin-top: 1px \9;
+    margin-top: 1px;
     /* IE8-9 */
 
     line-height: normal;
@@ -2203,7 +2199,6 @@ textarea.input-lg {
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
-    user-select: none;
     font-weight: 300;
     -webkit-transition: all 0.15s;
     -moz-transition: all 0.15s;
@@ -2230,7 +2225,6 @@ textarea.input-lg {
 .btn[disabled],
 fieldset[disabled] .btn {
     cursor: not-allowed;
-    pointer-events: none;
     opacity: 0.65;
     filter: alpha(opacity=65);
     -webkit-box-shadow: none;
@@ -3482,15 +3476,6 @@ input[type="button"].btn-block {
 .dropdown-menu > .disabled > a:hover,
 .dropdown-menu > .disabled > a:focus {
     color: #d7d7d7;
-}
-
-.dropdown-menu > .disabled > a:hover,
-.dropdown-menu > .disabled > a:focus {
-    text-decoration: none;
-    background-color: transparent;
-    background-image: none;
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-    cursor: not-allowed;
 }
 
 .open > .dropdown-menu {
@@ -5367,33 +5352,6 @@ a.thumbnail:focus {
     color: #f9002f;
 }
 
-@-webkit-keyframes progress-bar-stripes {
-    from {
-        background-position: 40px 0;
-    }
-    to {
-        background-position: 0 0;
-    }
-}
-
-@-moz-keyframes progress-bar-stripes {
-    from {
-        background-position: 40px 0;
-    }
-    to {
-        background-position: 0 0;
-    }
-}
-
-@-o-keyframes progress-bar-stripes {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: 40px 0;
-    }
-}
-
 @keyframes progress-bar-stripes {
     from {
         background-position: 40px 0;
@@ -5490,7 +5448,6 @@ a.thumbnail:focus {
 .media,
 .media-body {
     overflow: hidden;
-    zoom: 1;
 }
 
 .media,
@@ -5557,11 +5514,11 @@ a.thumbnail:focus {
 }
 
 a.list-group-item {
-    color: #555555 er;
+    color: #555555;
 }
 
 a.list-group-item .list-group-item-heading {
-    color: #333333 er;
+    color: #333333;
 }
 
 a.list-group-item:hover,
@@ -6376,7 +6333,6 @@ body.modal-open,
     background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
     background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
 }
 
 .carousel-control.right {
@@ -6387,7 +6343,6 @@ body.modal-open,
     background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
     background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 }
 
 .carousel-control:hover,
@@ -6529,7 +6484,6 @@ body.modal-open,
 }
 
 .text-hide {
-    font: 0/0 a;
     color: transparent;
     text-shadow: none;
     background-color: transparent;
@@ -6538,16 +6492,6 @@ body.modal-open,
 
 .affix {
     position: fixed;
-}
-
-@-ms-viewport {
-    width: device-width;
-}
-
-@media screen and (max-width: 400px) {
-    @-ms-viewport {
-        width: 320px;
-    }
 }
 
 .hidden {
